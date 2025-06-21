@@ -2,7 +2,7 @@ package leetCode;
 
 public class leetcode2894 {
 
-        public int differenceOfSums(int n, int m) {
+        public static int differenceOfSums(int n, int m) {
 
             int x = n/m;
             int num2 = m*x*(x+1)/2;
@@ -10,6 +10,12 @@ public class leetcode2894 {
 
             return num1-num2;
 
+    }
+
+    public static void main(String[] args) {
+
+        int diff = differenceOfSums(5,1);
+        System.out.println(diff);
     }
 
 }
