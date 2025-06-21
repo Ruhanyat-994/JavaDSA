@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.problem_2894;
 
 public class leetcode2894 {
 
