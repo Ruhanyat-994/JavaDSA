@@ -106,4 +106,25 @@ public class TwoSum2 {
     }
 ```
 
+<h2 align="center">Question 26</h1>
+
+![Screenshot 2025-06-29 054621](https://github.com/user-attachments/assets/37138a5f-e4d2-49a3-b7af-58e0d378f953)
+
+```java
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int unique =1;
+        for(int i=1; i<nums.length; i++){
+            if(nums[i] != nums[i-1]){
+                unique++;
+                nums[unique-1] = nums[i];
+            }
+        }
+        return unique;
+        
+    }
+}
+```
+
+
 
