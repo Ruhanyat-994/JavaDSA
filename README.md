@@ -126,5 +126,28 @@ class Solution {
 }
 ```
 
+<h2 align="center">Question 977</h1>
+
+![Screenshot 2025-06-30 035617](https://github.com/user-attachments/assets/d4096011-fcdb-4e31-b69b-2460faf59643)
+
+```java
+public class Solution {
+    public int[] sortedSquares(int[] nums) {
+        int left = 0;
+        int right = nums.length - 1;
+        int[] result = new int[nums.length];
+        for (int i = nums.length - 1; i >= 0; i--) {
+            if (Math.abs(nums[left]) > Math.abs(nums[right])) {
+                result[i] = nums[left] * nums[left];
+                left++;
+            } else {
+                result[i] = nums[right] * nums[right];
+                right--;
+            }
+        }
+        return result;
+    }
+```
+
 
 
