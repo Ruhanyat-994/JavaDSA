@@ -178,5 +178,30 @@ class Solution {
     }
 ```
 
+<h2 align="center">Question 1710</h1>
+
+```java
+class Solution {
+    public int maximumUnits(int[][] boxTypes, int truckSize) {
+        Arrays.sort(boxTypes, (a,b) -> b[1] - a[1]);
+
+        int totalUnits = 0;
+
+        for(int[] box : boxTypes){
+            int boxCount = box[0];
+            int unitsPerCount = box[1];
+            if(truckSize >= boxCount){
+                totalUnits += boxCount * unitsPerCount;
+                truckSize -= boxCount;
+            }else{
+                totalUnits += truckSize * unitsPerCount;
+                break;
+            }
+        }
+        return totalUnits;
+    }
+}
+```
+
 
 
