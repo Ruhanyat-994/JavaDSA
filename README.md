@@ -203,5 +203,30 @@ class Solution {
 }
 ```
 
+<h2 align="center">Question 409</h1>
 
+<img width="1006" height="783" alt="image" src="https://github.com/user-attachments/assets/844dbdda-5df7-4b31-92e6-36380029e5f2" />
+
+```java
+class Solution {
+    public int longestPalindrome(String s) {
+
+        int[] freq = new int[128];
+        for(char c: s.toCharArray()){
+            freq[c]++;
+        }
+
+        int length = 0;
+        for(int count: freq){
+            length += (count/2)*2;
+        }
+
+        if(length< s.length()){
+            length++;
+        }
+        return length;
+        
+    }
+}
+```
 
