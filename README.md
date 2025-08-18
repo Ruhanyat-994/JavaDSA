@@ -231,6 +231,9 @@ class Solution {
 ```
 <h2 align="center">Question 455</h1>
 
+<img width="1094" height="821" alt="Screenshot 2025-08-18 160931" src="https://github.com/user-attachments/assets/a7ecdaa5-1feb-479a-9365-3e2a7d96a473" />
+
+
 ```java
 class Solution {
     public int findContentChildren(int[] g, int[] s) {
