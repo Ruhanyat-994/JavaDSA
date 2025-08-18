@@ -205,7 +205,7 @@ class Solution {
 
 <h2 align="center">Question 409</h1>
 
-<img width="1006" height="783" alt="image" src="https://github.com/user-attachments/assets/844dbdda-5df7-4b31-92e6-36380029e5f2" />
+<img width="1006" height="783" alt="Screenshot 2025-08-18 010644" src="https://github.com/user-attachments/assets/0a19173f-656e-4aed-bbf0-f4135c8ddcb2" />
 
 ```java
 class Solution {
