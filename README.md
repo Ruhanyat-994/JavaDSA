@@ -229,4 +229,26 @@ class Solution {
     }
 }
 ```
+<h2 align="center">Question 455</h1>
+
+```java
+class Solution {
+    public int findContentChildren(int[] g, int[] s) {
+        Arrays.sort(g);
+        Arrays.sort(s);
+
+        int childCount=0;
+        int cookiesCount=0;
+
+        while(childCount<g.length && cookiesCount<s.length){
+            if(s[cookiesCount] >= g[childCount]){
+                childCount++;
+            }
+            cookiesCount++;
+        }
+        return childCount;
+
+    }
+}
+```
 
